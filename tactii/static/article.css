@@ -1,0 +1,20 @@
+
+  p{
+    margin-bottom: 2em;
+    color: aliceblue;
+  }
+  h2{
+    color:rgb(200, 218, 255)
+  }
+
+  h1{
+    color:rgb(200, 218, 255)
+  }
+  .bl{
+  filter: blur(3px);
+  }
+  .center
+  {
+    text-align: center;
+    margin-bottom:30px;
+  }

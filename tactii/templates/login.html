@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="width: auto;height:100vh;">
+    <div style="z-index:9;text-align: center;width: 490px;height:280px;background-color:rgba(255, 255, 255,0.4);margin-left: auto;margin-right: auto;margin-top: 30vh;border-style:solid;border-width: 0;border-radius:20px;">
+<div class="column is-4 is-offset-4">
+    <h3 class="title" style="color: aliceblue; padding-top:5%;">Login</h3>
+    <div class="box">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification" style="color:rgb(255,193,7)">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+        
+        <form method="POST" action="/login">
+            <div class="field">
+                <div class="control" style="padding-top: 5%;">
+                    <input class="input is-large" type="email" name="email" placeholder="Your Email" style="border-style: solid;border-width: 0;border-radius:20px;text-align: center;" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control" style="padding-top: 5%;">
+                    <input class="input is-large" type="password" name="password" placeholder="Your Password" style="border-style: solid;border-width: 0;border-radius:20px;text-align: center;">
+                </div>
+            </div>
+            <div class="field" style="padding-top: 2%;">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <h6 style="color: aliceblue;display: inline;">Remember me</h6>
+                </label>
+            </div>
+            <button class="button btn-warning" style="margin-top:4%; border-style: solid;border-width: 0;border-radius:20px;">Login</button>
+        </form>
+    </div>
+</div></div>
+</div>
+{% endblock %}

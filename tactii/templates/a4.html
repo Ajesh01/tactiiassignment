@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block st %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='article.css') }}">
+
+{% endblock %}
+{% block content %}
+
+<div style="position: relative;margin-top:45px;height:100vh;height:100vh;overflow:auto;">
+{% if session.get('allow')== False %}
+<div style="width:100%;height: 100% ;margin-top:-45px;
+position: fixed;z-index: 8;background-color: rgba(255, 255, 255,0.5);
+">
+<div style="z-index:9;text-align: center;width: 25%;height:25vh;background-color:rgba(255, 255, 255,0.7);margin-left: 37.5vw;margin-top: 35vh;border-style:solid;border-width: 0;border-radius:20px;"><h3 style="padding-top:5vh;color:black;">No More free articles left!</h3><button class="button is-block is-info is-large is-fullwidth btn-warning " style="border-style:solid;border-radius:20px ;margin-top:5vh;">Get Premium</button></div>
+</div>
+{% endif %}
+<div class="{{'bl' if session.get('allow')== False }}">
+
+    <h2 style="color: aliceblue;float: right;margin-right:5%;">free articles left: {{free}}</h2>
+    <br>
+<div>
+<h1 style="margin-left:46vw;">Article 4</h1>
+<div style="position: absolute;width:70%;margin-left: 15vw;">
+    <h2 id="arth2">Description</h2>
+<p>This is a a transcription from a recent <a href="">Show Me Your Mic episode</a> using <a href="">Descript</a>, a Mac/Windows transcription app.</p>
+<p>Descript is able to spit out a transcription that looks like what's below. The only edit I've done to it is doing a find/replace on the speaker's names to bold them and added manual line breaks to the text.</p>
+<h2>Goal</h2>
+<p>To make the presention of the transcription as readable and nice to look at as possible without having to do a bunch of work to make it look nice.</p>
+<h2>Transcription Sample</h2>
+<p>(<em>This is maybe 15% of the whole 55 minute episode</em>)</p>
+<p><strong>Chris:</strong> I've stumbled into this fall either because I felt like I was I had some momentum. And then summer end of summer kind of happen. It was just kind of like everything feels old. And so this is the kicking getting back on the horse proverbial horse. But you did something neat speaking of recording and podcasting.</p>
+<p>So in your day job doing a podcast for your company and then getting the [00:13:00] opportunity to do a live podcast with that which is that this isn't the first time I don't think you've done that but I guess I'm curious just for podcasters other what I've liked about so the podcast is untapped. Or for on top is called drink socially untapped as the app that promotes the podcast are the podcast pronounced I guess and and I guess first of all the what's the format of the show regularly that you decided to sort of</p>
+<p><strong>Kyle:</strong> Yeah, so usually well so I should say the majority of the actual like content and production of the show is on my co-host Tim who is one of the co-founders of untapped and he takes a lot of time to put together a little bit of like.</p>
+<p>Topical stuff of what's happening in the beer industry right now and a little bit of sort of like history of a particular style and maybe asking a question about the about the beer industry or about the app in particular and then giving some updates again. It's like you were saying very [00:14:00] corporate not not corporate.</p>
+<p>Let me rephrase more like a brand-specific podcast where you've got kind of. Hey, we're here talking about PayPal cuz PayPal's the company we work for and that's just going to be it. Maybe we'll talk a little bit about markets. Or maybe we'll talk about, you know, people paying each other, but it's going to be all sort of about PayPal same sort of thing for beer where untapped is the leading be wrap in this industry and it's pretty fun to put together every single week.</p>
+<p>I. Out of full disclosure. I used to be the one editing this podcast. We've since handed it off to you who are in very capable hands. Thank goodness to put together some semblance of an episode between sort of our on and off banter and you know retakes and things like that. It's been really good to have.</p>
+<p>You on the the proverbial team if you would working on that [00:15:00] for us, but so that's that's kind of the the rundown of what we usually do on at at this in a little bit of History little bit current events little bit news little bit question and answer and we wanted to bring part of that to the live episode that we had scheduled at Odell's which is a brewery over in Denver, Colorado.</p>
+<p>So we were there for the Great American Beer Festival. This is. Big huge like 50,000 person event that happens every single year where you get together in a gigantic conference Hall in the center of Denver you go around drinking one ounce pours of beers that over 800 different breweries brought lots and lots of beer is happening.</p>
+<p>But we did the we did the podcast at a brewery that was outside of town a little. Which I think was a pretty good place to do it. We have some audio coming out this week actually tomorrow [00:16:00] from the floor and it is loud there. It was just a madhouse and I'll talk at maybe a little bit about doing.</p>
+<p>Sort of like live on the fourth floor recordings, but the one that excited me the most was the live podcast recording we did from Odell's where we sat down with one of their head folks over there and one of the beverage innovators from Buffalo Wild Wings, which was really cool. So again, like talking about guests.</p>
+<p>It was incredibly cool to be able to talk to those kind of people especially being in the beer industry and sort of. A huge impact that a major franchise like Buffalo Wild Wings has and one of the Premier breweries that are in Colorado to be able to talk to those folks. So it was really really I think an interesting discussion.</p>
+<p>But I wanted to talk not just about the podcast and the discussion that we had but sort of like the equipment and kind of the [00:17:00] planning that had to go into this and thinking about like, oh man. Okay, so I'm flying out from California. What do I bring? What's going to be the like most minimal setup that I can bring?</p>
+<p>We've got enough microphones for both Tim and I the to co-hosts and then the three different guests that we were going to put on it was kind of a logistical nightmare trying to figure out like hey do I have a cable is might have another cable. I had to look everywhere to find a bunch of XLR cables.</p>
+<p><strong>Chris:</strong> What did like either you or untapped? I'm not sure where the line is. Probably fuzzy but</p>
+<p><strong>Kyle:</strong> Hi, I'm Kyle and Taps now. Actually, I've changed my name we were talking about. Hi, Mom. I'm Michael borrow untapped. It's a hyphenated situation.</p>
+<p><strong>Chris:</strong> a slightly different voice on the podcast app to say there's like a I'm in corporate work mode and then there's the morning show Kyle which is like I'm I'm Gonzo radio guy voice</p>
+<p>[00:18:00] <strong>Kyle:</strong> Yeah, yeah, most definitely and I it's hard to my wife says the same thing so I can't I can't fault you for believing that she hates hates my morning show Kyle Morning Show persona.</p>
+<p>For sure. Yeah. She's like, oh, it's so fake. Why are you so fat? Like well, it's it's an inflection. You know, it's like you got to give the people what they want. So we could have rented stuff. There is a local place called borrow lenses that does both audio video photo gear and they've got some local places, but you can also have the the stuff kind of mailed out to you and they'll rent it for you know.</p>
+<p>Three days seven days 10 days. We brought I've got one here. I've got a Shure sm7b that I've been using for the last like five years of podcasting that I love very much but is incredibly grotesque and disgusting and made sure to not give the guests. I would I probably would have done pretty well [00:19:00] grabbing like a new cover for this.</p>
+<p>But then we have two others to other sm7 bees that are in the studio in Downtown LA. So we had a total of three of those microphones. We also I have a Shure sm57 which is like one of those kind of regular looking stick microphones the kind that you would see like Bono singing to write you and I am I speaking your language now.</p>
+<p>He probably doesn't use it. Sure sm57 but either way, it's just one of those kind of like $200 Dynamic hyper-cardioid style microphones that you might you may even see folks like. Pointing it at a cabinet to record it in studio for guitar tone and things like that just to kind of get more of a studio sound and less of a [00:20:00] computer.</p>
+<p>I found it. It's pretty warm in terms of sound so I brought one of those as well and we have them all feeding into a zoom H6. This is one of those like. Battery powered portable recorders you slam of SD card into it and you can record up to this one was six tracks. It's for XLR inputs and I believe like a some sort of the to other inputs other places.</p>
+<p>Maybe maybe they consider like the little microphone that connects to the top to be the other two tracks.</p>
+<p><strong>Chris:</strong> What you can get a one. Adapters on the top, you can be a two XLR input</p>
+<p><strong>Kyle:</strong> Got it. Okay.</p>
+<p><strong>Chris:</strong> you can actually get six</p>
+<p><strong>Kyle:</strong> Got it that makes out you sound like you've done your research, you know, you know what you're talking</p>
+<p><strong>Chris:</strong> I have one of those that I use.</p>
+<p>Yeah, I or I'm supposed to be using as a backup for any time. I do a podcast recording it's conveniently sitting in my backpack across the room. I can see it over there not being used as a backup for this recording.</p>
+<p><strong>Kyle:</strong> is he as he goes and checks on his audio hijacking out there were still going.</p>
+<p>Yeah, and [00:21:00] I looks good. I really liked it. This was my first experience with the h66 track in particular. I had used a. I feel like it was assumed H1, or it was one of the first ones that I had ever. Come across with zoom and that was one of the first devices that I recorded voice over for for like videos when I was working at Mophie the battery case company.</p>
+<p>We I was doing most of the voiceover for both like our call center that we had in, Michigan. And also the videos that we would put out it was a lot of voice over for that. So I was using the the zoom H1 for those purposes, but I hadn't used it sense. So like getting up to speed with the H6 was pretty easy kind of the same controls on that one.</p>
+<p>But one of the coolest Parts about it was that it had built in. Limiters on each of the different inputs. So I would plug the XLR [00:22:00] into a Fed head which is like an inline microphone preamp where if you pass phantom power to it, it'll kind of lower the noise ceiling. Is that what it's called. Anyway, it made it so you get more gain.</p>
+<p>Yeah, the the yeah the noise floor was lower so that way I was able to kind of. Pulled down the game knobs a little bit and make it so it wasn't, you know, really really cranked up and grabbing a whole bunch of noise. That worked really. Well, I liked the the FED heads kind of plugged into those and then I would turn on the limiter on each of the different tracks and that way I wasn't adding like inline compression and there wasn't any weird delay because of the software compression coming out to the monitor for the headphones.</p>
+<p>It was just a very very good experience and like looking at the Monstrous Beast of a like [00:23:00] rack-mounted system that I had prior to doing this or even that we have over in the. Downtown LA Studios. It is just a godsend to have this Zoom H6 recorder just be this tiny little thing that I put in a little bag and carried around the show floor with me.</p>
+<p>Like it's it was perfect almost too perfect time. I was waiting for the moment where it's like, oh no, we ran a space and. Your files are all corrupted or like the you know, whatever the case maybe it was just too good to be true a little bit. You said that you have a zoom H6. Is there a part of your process where you wanted to use this as you said like a backup is how would that even fit in</p>
+</div></div></div></div>
+{% endblock %}

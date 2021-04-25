@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block st %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+{% endblock %}
+{% block content %}
+<div style="height:100vh;">
+  
+    <div class="row" style="margin-top:10vh;" >
+      <div class="col-sm-6 container">
+        <div class="card" style="max-width:50vh;align-self: center;margin: 0 auto;border-style: solid;border-width: 0;border-radius:20px;">
+          <div class="card-body " style="text-align: center;">
+            <h5 class="card-title">Article 1</h5>
+            <p class="card-text">Transcript about a Podcast.</p>
+            <a href="{{url_for('main.article1')}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 container">
+        <div class="card" style="max-width:50vh;align-self: center;margin: 0 auto;border-style: solid;border-width: 0;border-radius:20px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Article 2</h5>
+            <p class="card-text">Transcript about a Podcast.</p>
+            <a href="{{url_for('main.article2')}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 container" style="margin-top:10vh;">
+        <div class="card" style="max-width:50vh;align-self: center;margin: 0 auto;border-style: solid;border-width: 0;border-radius:20px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Article 3</h5>
+            <p class="card-text">Transcript about a Podcast.</p>
+            <a href="{{url_for('main.article3')}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 container" style="margin-top:10vh;">
+        <div class="card" style="max-width:50vh;align-self: center;margin: 0 auto;border-style: solid;border-width: 0;border-radius:20px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Article 4</h5>
+            <p class="card-text">Transcript about a Podcast.</p>
+            <a href="{{url_for('main.article4')}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 container" style="margin-top:10vh;">
+        <div class="card" style="max-width:50vh;align-self: center;margin: 0 auto;border-style: solid;border-width: 0;border-radius:20px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Article 5</h5>
+            <p class="card-text">Transcript about a Podcast.</p>
+            <a href="{{url_for('main.article5')}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div><div class="col-sm-6 container" style="margin-top:10vh;">
+        <div class="card" style="max-width:50vh;align-self: center;margin: 0 auto;border-style: solid;border-width: 0;border-radius:20px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Article 6</h5>
+            <p class="card-text">Transcript about a Podcast.</p>
+            <a href="{{url_for('main.article6')}}" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+{% endblock %}
